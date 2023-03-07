@@ -11,13 +11,9 @@ name: Project Github CICD
 on:
   push:
     branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
 
 jobs:
   build:
-    
-    if: github.event.review.state == 'approved'
     
     runs-on: ubuntu-latest
 
